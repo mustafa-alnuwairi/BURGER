@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BURGER — Born to Smash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">BUR<span>G</span>ER</a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#menu" class="nav-cta">Order Now</a></li>
+    </ul>
+    <div style="display:flex;gap:12px;align-items:center;">
+      <button class="cart-trigger" id="cartTrigger" aria-label="Open cart">
+        &#x1F6D2;
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow hg1"></div>
+    <div class="hero-glow hg2"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-tag">&#x1F525; Fresh &bull; Bold &bull; Legendary</span>
+        <h1 class="hero-headline">BORN<br>TO<br><span class="fire">SMASH</span></h1>
+        <p class="hero-sub">Handcrafted burgers &amp; sandwiches built for those who don't settle. Every bite hits different.</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-primary">See The Menu</a>
+          <a href="#about" class="btn-outline">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-burger-wrap">
+          <div class="hero-ring"></div>
+          <div class="hero-emoji">&#x1F354;</div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hstat-n">30+</div><div class="hstat-l">Menu Items</div></div>
+          <div class="hero-stat"><div class="hstat-n">100%</div><div class="hstat-l">Fresh</div></div>
+          <div class="hero-stat"><div class="hstat-n">&#x2605;4.9</div><div class="hstat-l">Rating</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="menu-header reveal">
+        <div>
+          <span class="section-label">What We Serve</span>
+          <h2 class="section-title">THE MENU</h2>
+        </div>
+        <p class="section-desc">From legendary sandwiches to ice-cold drinks and sinful sweets — there's something for every craving.</p>
+      </div>
+      <div class="menu-tabs reveal" id="menuTabs"></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">OUR<br>STORY</h2>
+        <p class="about-body">We didn't start BURGER to follow trends. We started it because we were tired of mediocre sandwiches that forgot the most important ingredient — <strong style="color:var(--text)">obsession</strong>.</p>
+        <p class="about-body">Every recipe is crafted with purpose. Every ingredient is chosen with intent. The result? A menu that hits hard and leaves you coming back for more.</p>
+        <ul class="about-list">
+          <li>Freshly prepared every day — zero shortcuts</li>
+          <li>Secret house sauces made in-kitchen only</li>
+          <li>Premium ingredients, never frozen</li>
+          <li>Over 15 additive options to build your perfect sandwich</li>
+        </ul>
+        <a href="#menu" class="btn-primary">Explore The Menu</a>
+      </div>
+      <div class="about-visual reveal">
+        <img src="restaurant/interior.jpg" alt="Restaurant interior" class="about-img-main" loading="lazy" />
+        <img src="restaurant/smash-burger.jpg" alt="Our burgers" class="about-img-accent" loading="lazy" />
+        <div class="about-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">GET IN<br>TOUCH</h2>
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icon">&#x1F4CD;</div>
+            <div><div class="info-label">Address</div><div class="info-val">123 Smash Street, Cairo, Egypt</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">&#x1F4DE;</div>
+            <div><div class="info-label">Phone</div><div class="info-val">+20 100 000 0000</div></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">&#x23F0;</div>
+            <div><div class="info-label">Hours</div><div class="info-val">Everyday &mdash; 12:00 PM to 2:00 AM</div></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link">&#x1F4F7;</a>
+          <a href="#" class="social-link">&#x1F310;</a>
+          <a href="#" class="social-link">&#x1F3A5;</a>
+        </div>
+        <div class="map-wrap">&#x1F5FA;&#xFE0F;&nbsp; Embed Google Maps iframe here</div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <h3 class="form-title">SEND A MESSAGE</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder=" Name" required /></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+20 100 000 0000" /></div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us something..."></textarea></div>
+          <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-inner">
+    <div class="footer-logo">BUR<span>G</span>ER</div>
+    <p class="footer-info">Mustafa Ahmed | Front-End Developer 2026</p>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 BURGER. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-head">
+      <h2>YOUR ORDER</h2>
+      <button class="cart-close" id="cartClose">&#x2715;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <div class="cart-empty-icon">&#x1F6D2;</div>
+        Your cart is empty.<br>Add some items from the menu!
+      </div>
+    </div>
+    <div class="cart-foot">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-val">
+          <span style="font-family:var(--ff-b);font-size:.8rem;color:var(--muted);margin-right:4px">EGP</span>
+          <span id="cartTotal">0.00</span>
+        </span>
+      </div>
+      <button class="btn-primary" style="width:100%;text-align:center;border:none;cursor:pointer;font-size:.85rem" id="checkoutBtn">
+        Place Order
+      </button>
+    </div>
+  </div>
+
+  <!-- ORDER MODAL -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box">
+      <div id="orderFormState">
+        <h2 class="modal-title">PLACE ORDER</h2>
+        <p class="modal-sub">Fill in your details and we'll have it ready for you.</p>
+        <div class="order-summary" id="orderSummary"></div>
+        <form id="orderForm" novalidate>
+          <div class="form-group"><label>Full Name *</label><input type="text" id="oName" placeholder="Your name" required /></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" id="oPhone" placeholder="+20 100 000 0000" required /></div>
+          <div class="form-group"><label>Delivery Address</label><input type="text" id="oAddress" placeholder="Street, City (optional)" /></div>
+          <div class="form-group"><label>Special Notes</label><textarea id="oNotes" placeholder="Any special requests..."></textarea></div>
+          <div class="modal-actions">
+            <button type="button" class="btn-cancel" id="modalCancel">Cancel</button>
+            <button type="submit" class="btn-confirm" id="confirmBtn">Confirm Order</button>
+          </div>
+        </form>
+      </div>
+      <div class="order-success" id="orderSuccess">
+        <div class="success-icon">&#x2705;</div>
+        <h3>ORDER PLACED!</h3>
+        <p>Your order has been received.<br>We're preparing it now. Hang tight!</p>
+        <p style="margin-top:16px;font-family:var(--ff-h);font-size:1.4rem;color:var(--amber)" id="successOrderId"></p>
+        <button class="btn-primary" style="margin-top:28px;border:none;cursor:pointer" id="successClose">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
